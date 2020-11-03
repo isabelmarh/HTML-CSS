@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 6vh;
+}
+
+.blackHeart {
+  width: 20px;
+  padding-right: 1rem;
+}
+
+.navLinks {
+  list-style: none;
+}
+
+.navLinks li {
+  display: inline;
+  padding-right: 1.5rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .searchBar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+} */
+
+.npmLogo {
+  width: 4.5rem;
+}
+
+.searchInput {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  background: #f2f2f2;
+  height: 2.5rem;
+  padding: -10px;
+}
+
+.magnify {
+  margin: 0px 15px;
+  height: 15px;
+  width: 15px;
+}
+
+.search {
+  width: 90%;
+  border: none;
+  background: #f2f2f2;
+  height: 35px;
+  outline: none;
+}
+
+.searchButton {
+  background: #fb3e44;
+  color: #fff;
+  border: none;
+  height: 100%;
+  width: 12%;
+  cursor: pointer;
+}
+
+.login {
+  width: 10%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 15px;
+}
+
+.join {
+  border: 1px solid #9a9a9a;
+}
+
+.hero {
+  margin: 5rem auto 1rem auto;
+  width: 700px;
+  background: rgba(232, 217, 217, 0.3);
+  padding-bottom: 3rem;
+}
+
+.hero1 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.hero2 {
+  margin: 20px auto;
+  height: 50%;
+  width: 40%;
+}
+
+.hero2 p {
+  text-align: justify;
+}
+
+.hero3 {
+  width: 50%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seePlans {
+  background: #fb3e44;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  box-shadow: 8px 8px 3px rgba(251, 59, 73, 0.2);
+}
+
+.joinForFree {
+  text-decoration: none;
+  padding: 10px;
+  background: white;
+  color: black;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  align-items: center;
+}
+
+.info img {
+  height: 35%;
+  margin: 50px;
+}
+
+.info h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10%;
+  width: 50%;
+  text-align: center;
+  font-size: xx-large;
+  background-color: rgba(255, 204, 53, 0.4);
+}
+
+.info p {
+  width: 50%;
+  text-align: justify;
+}
+
+.features {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.features div {
+  margin: 2vw;
+}
+
+.features img {
+  width: 10%;
+}
+
+.features p {
+  text-align: justify;
+}
+
+.createOrg {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createOrg button {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  box-shadow: 8px 8px 0px rgba(128, 83, 35, 0.2);
+  cursor: pointer;
+}
