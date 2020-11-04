@@ -174,7 +174,7 @@ h6 {
 }
 
 .list li a:hover {
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
 }
 
 /* Inner page grid container */
@@ -289,4 +289,48 @@ h6 {
 
 #last-article {
   grid-column: 2 / span 2;
+}
+
+/* Footer */
+
+#main-footer{
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+#main-footer img{
+  width: 150px;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer a:hover{
+  color: var(--primary-color);
+}
+
+#main-footer .footer-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+#main-footer .footer-container >*:last-child{
+  background-color: #444;
+  grid-column: 1 / span 4;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type="email"]{
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type="submit"]{
+  width: 90%;
 }
