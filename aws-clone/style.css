@@ -5,17 +5,20 @@
 }
 
 body {
-    font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
 }
 
 .container {
-  overflow: hidden; 
+  overflow: hidden;
   position: relative;
   min-height: 68px;
   padding: 0 40px 0 30px;
   background-color: #232f3e;
   color: #dddddd;
   line-height: 1.6;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .logo {
@@ -23,11 +26,10 @@ body {
   width: 59px;
   height: 35px;
   border: 0;
-  /* background: transparent url(https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg); */
-  
+  padding-top: 10px;
 }
 
-#top-nav {
+#top-nav ul {
   float: right;
   display: flex;
   justify-content: flex-end;
@@ -45,14 +47,23 @@ ul {
   padding-right: 1.5rem;
 }
 
-.btn {
-    display: inline-block;
-    border: none;
-    border-radius: 0.3rem;
-    background:#EC7211;
-    color: #fff;
-    padding: 0.5rem 1.5rem;
+.navLinks li:hover {
+  color: #ec7211;
+  cursor: pointer;
+}
 
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 0.3rem;
+  background: #ec7211;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+  background: #b35508;
+  cursor: pointer;
 }
 
 #primary-links ul {
@@ -70,10 +81,17 @@ ul {
   font-size: 15px;
 }
 
+.primary-links li:hover,
+i:hover,
+#last-footer li:hover {
+  color: #ec7211;
+  cursor: pointer;
+}
+
 .hero {
   margin: auto;
-  padding: 50px 0 0 80px;
-  background:#08121fec;
+  padding: 180px 0 0 80px;
+  background: #08121fec;
   color: #fff;
 }
 
@@ -90,16 +108,32 @@ ul {
   padding-bottom: 50px;
 }
 
-.features {
+.features,
+features-2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  margin: 15px 90px auto 90px
+  margin: 15px 90px auto 90px;
+  justify-content: center;
 }
 
 .card {
   border: 1px lightgrey solid;
   padding: 10px 20px 10px;
+}
+
+.features-2 card img {
+  width: 100%;
+  height: auto;
+}
+
+.features-2 h5 {
+  font-size: 14px;
+}
+
+.card h5,
+p {
+  justify-content: center;
 }
 
 h5 {
@@ -109,9 +143,132 @@ h5 {
 .features p {
   font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.749);
-
 }
 
-/* img {
-  padding: auto;
+.regions {
+  background-color: #33333307;
+}
+
+.regions h2 {
+  color: #232f3e;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 0 15px;
+  padding-top: 30px;
+}
+
+.regions-p {
+  color: #333;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.5;
+  padding: 0 220px 20px;
+}
+
+.regions img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.regions .learn-more {
+  color: #007eb9;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+
+#footer {
+  margin: auto;
+  padding: 40px 0 0 0;
+}
+
+#footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  padding: 20px 0 20px 30px;
+  background-color: #232f3e;
+  color: #dddddd;
+  line-height: 1.8;
+  justify-content: center;
+}
+
+#footer h3 {
+  margin: 10px 0;
+}
+
+#footer p {
+  font-size: 14px;
+}
+
+.btn-footer {
+  margin-bottom: 20px;
+}
+
+#icons i {
+  padding: 0 12px 0 0;
+}
+
+#last-footer {
+  color: #232f3e;
+  font-size: 14px;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  padding-inline-start: 40px;
+  line-height: 22px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* #last-footer ul {
+  display: flex;
+  justify-content: center;
 } */
+
+#last-footer ul{
+  display: flex;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px;
+}
+
+#last-footer li {
+  margin: 0 6px 0 0;
+}
+
+@media (max-width: 768px) {
+  #top-nav,
+  #primary-links {
+    display: none;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .regions img {
+    width: 100%;
+    height: auto;
+  }
+
+  #footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+    #last-footer ul{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+   #last-footer li copy{
+    display: grid;
+    grid-template-columns: span 1/3;
+  }
+}
